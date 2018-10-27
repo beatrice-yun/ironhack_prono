@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script type="text/javascript" src="./js/index.js"></script>
+  <title>Fem D1 soccer prono</title>
+</head>
+<body>
+
+  <!-- We create a section to contain information about the Game -->
+  <section class="info-container">
+    <h1>Feminin division 1 soccer pronostics</h1>
+  </section>
+
+  <!-- We show the number of the day of competition -->
+  <section class="match-number">
+    <h2>10ème journée</h2>
+  </section>
+
+  <!-- Div that will contain all the information that we
+  will specify to create a new match. -->
+  <div class="match-row">
+    <div class="col-xs-2">
+      <input id="new-team1-name">
+    </div>
+    <div class="col-xs-2">
+      <input id="new-team2-name">
+    </div>
+    <div class="col-xs-2">
+      <button id="new-match-create">Créer un nouveau match</button>
+    </div>
+    <div class="col-xs-2">
+      <button class="btn btn-success" id="day-validate">Valider la grille</button>
+    </div>
+  </div>
+
+  <!-- We create another section to indicate where we will be including
+  information about the matchs -->
+  <section id="match-list" class="container">
+
+  <!-- Title of the rows. -->
+  <div class="match-row-title">
+    <div class="team1-name col-xs-2">
+      <span>Equipe 1</span>
+    </div>
+    <div class="team2-name col-xs-2">
+      <span>Equipe 2</span>
+    </div>
+    <div class="player1-score col-xs-3">
+      <span>Joueur 1</span>
+    </div>
+    <div class="player2-score col-xs-3">
+      <span>Joueur 2</span>
+    </div>
+    <div class="player3-score col-xs-3">
+      <span>Joueur 3</span>
+    </div>
+    <div class="real-score col-xs-3">
+      <span>Résultats</span>
+    </div>
+    <!--<div class="player1-scores">
+      <div class="score1 col-xs-3">
+        <span>Score 1</span>
+      </div>
+      <div class="score2 col-xs-3">
+        <span>Score 2</span>
+      </div>
+    </div>-->
+  </div>
+
+  <!-- Each individual div element with the class "match-row" will represent
+  one line match. -->
+  <div class="match-row">
+  
+  <!-- Row. -->
+  <div class="match-row">
+      <div class="team1-name col-xs-2">
+        <span>NomDeLEquipe1</span>
+      </div>
+      <div class="team2-name col-xs-2">
+        <span>NomDeLEquipe2</span>
+      </div>
+      <div class="player1-prono col-xs-3">
+        <input type="number" value="0" size="2" style="width: 40%">
+        <input type="number" value="0" size="2" style="width: 40%">
+      </div>
+      <div class="player2-prono col-xs-3">
+        <input type="number" value="0" size="2" style="width: 40%">
+        <input type="number" value="0" size="2" style="width: 40%">
+      </div>
+      <div class="player3-prono col-xs-3">
+        <input type="number" value="0" size="2" style="width: 40%">
+        <input type="number" value="0" size="2" style="width: 40%">
+      </div>
+      <div class="final-result col-xs-3">
+        <input type="number" value="0" size="2" style="width: 40%">
+        <input type="number" value="0" size="2" style="width: 40%">
+      </div>
+      <div class="match-delete col-xs-3">
+        <button class="btn btn-delete">Supprimer</button>
+      </div>
+      <!--
+      <div class="player1-score1 col-xs-3">
+        <input type="number" id="score-team1" value="0" size="2" style="width: 80%">
+      </div>
+      <div class="player1-score2 col-xs-3">
+        <input type="number" id="score-team2" value="0" size="2" style="width: 80%">
+      </div>
+      <div class="player2-score1 col-xs-3">
+        <input type="number" id="score-team1" value="0" size="2" style="width: 80%">
+      </div>
+      <div class="player2-score2 col-xs-3">
+        <input type="number" id="score-team2" value="0" size="2" style="width: 80%">
+      </div>
+      <div class="player3-score1 col-xs-3">
+        <input type="number" id="score-team1" value="0" size="2" style="width: 80%">
+      </div>
+      <div class="player3-score2 col-xs-3">
+        <input type="number" id="score-team2" value="0" size="2" style="width: 80%">
+          </div>
+      <div class="real-score1 col-xs-3">
+        <input type="number" id="score-team1" value="0" size="2" style="width: 80%">
+      </div>
+      <div class="real-score2 col-xs-3">
+        <input type="number" id="score-team2" value="0" size="2" style="width: 80%">
+      </div>
+      <div class="match-delete col-xs-4">
+        <button class="btn btn-delete">Supprimer</button>
+      </div>
+      -->
+    </div>
+
+</body>
+</html>
