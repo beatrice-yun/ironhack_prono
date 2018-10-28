@@ -2,6 +2,12 @@ input {
   border: solid 1px black;
 }
 
+.score-input {
+  font-size: 14px;
+  display: inline-block;
+  width: 9.5%;
+}
+
 .container {
   width: 90%;
   min-width: 800px;

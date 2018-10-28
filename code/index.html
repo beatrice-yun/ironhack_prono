@@ -21,9 +21,13 @@
     <h2>10ème journée</h2>
   </section>
 
+  <!-- We create another section to indicate where we will be including
+  information about our matchs -->
+  <section id="matchs-list" class="container">
+  
   <!-- Div that will contain all the information that we
   will specify to create a new match. -->
-  <div class="match-row">
+  <div class="new-match-row">
     <div class="col-xs-2">
       <input id="new-team1-name">
     </div>
@@ -38,10 +42,6 @@
     </div>
   </div>
 
-  <!-- We create another section to indicate where we will be including
-  information about the matchs -->
-  <section id="match-list" class="container">
-
   <!-- Title of the rows. -->
   <div class="match-row-title">
     <div class="team1-name col-xs-2">
@@ -50,16 +50,16 @@
     <div class="team2-name col-xs-2">
       <span>Equipe 2</span>
     </div>
-    <div class="player1-score col-xs-3">
+    <div class="player1 col-xs-3">
       <span>Joueur 1</span>
     </div>
-    <div class="player2-score col-xs-3">
+    <div class="player2 col-xs-3">
       <span>Joueur 2</span>
     </div>
-    <div class="player3-score col-xs-3">
+    <div class="player3 col-xs-3">
       <span>Joueur 3</span>
     </div>
-    <div class="real-score col-xs-3">
+    <div class="results col-xs-3">
       <span>Résultats</span>
     </div>
     <!--<div class="player1-scores">
@@ -72,33 +72,54 @@
     </div>-->
   </div>
 
+  <div class="validation-row-button">
+      <div class="team1-name col-xs-2">
+          <span></span>
+        </div>
+        <div class="team2-name col-xs-2">
+          <span></span>
+        </div>
+        <div class="player1-score col-xs-3">
+          <button class="btn btn-success">Valider</button>
+        </div>
+        <div class="player2-score col-xs-3">
+          <button class="btn btn-success">Valider</button>
+        </div>
+        <div class="player3-score col-xs-3">
+          <button class="btn btn-success">Valider</button>
+        </div>
+        <div class="real-score col-xs-3">
+          <button class="btn btn-success">Valider</button>
+        </div>
+  </div>
+
   <!-- Each individual div element with the class "match-row" will represent
   one line match. -->
   <div class="match-row">
   
   <!-- Row. -->
   <div class="match-row">
-      <div class="team1-name col-xs-2">
+      <div class="team-name col-xs-2">
         <span>NomDeLEquipe1</span>
       </div>
-      <div class="team2-name col-xs-2">
+      <div class="team-name col-xs-2">
         <span>NomDeLEquipe2</span>
       </div>
-      <div class="player1-prono col-xs-3">
-        <input type="number" value="0" size="2" style="width: 40%">
-        <input type="number" value="0" size="2" style="width: 40%">
+      <div class="score-player col-xs-3">
+        <input class="score-input" type="number" value="0" size="2" style="width: 40%">
+        <input class="score-input"  type="number" value="0" size="2" style="width: 40%">
       </div>
-      <div class="player2-prono col-xs-3">
-        <input type="number" value="0" size="2" style="width: 40%">
-        <input type="number" value="0" size="2" style="width: 40%">
+      <div class="score-player col-xs-3">
+        <input class="score-input"  type="number" value="0" size="2" style="width: 40%">
+        <input class="score-input"  type="number" value="0" size="2" style="width: 40%">
       </div>
-      <div class="player3-prono col-xs-3">
-        <input type="number" value="0" size="2" style="width: 40%">
-        <input type="number" value="0" size="2" style="width: 40%">
+      <div class="score-player col-xs-3">
+        <input class="score-input"  type="number" value="0" size="2" style="width: 40%">
+        <input class="score-input"  type="number" value="0" size="2" style="width: 40%">
       </div>
-      <div class="final-result col-xs-3">
-        <input type="number" value="0" size="2" style="width: 40%">
-        <input type="number" value="0" size="2" style="width: 40%">
+      <div class="score-player col-xs-3">
+        <input class="score-input"  type="number" value="0" size="2" style="width: 40%">
+        <input class="score-input"  type="number" value="0" size="2" style="width: 40%">
       </div>
       <div class="match-delete col-xs-3">
         <button class="btn btn-delete">Supprimer</button>
@@ -133,8 +154,9 @@
       </div>
       -->
     </div>
+  </section>
 
-  <div class="last-row-title">
+  <!--<div class="last-row-title">
       <div class="team1-name col-xs-2">
           <span></span>
         </div>
@@ -153,9 +175,9 @@
         <div class="real-score col-xs-3">
           <span>Résultats</span>
         </div>
-  </div>
+  </div>-->
 
-  <div class="last-row-button">
+  <!--<div class="last-row-button">
       <div class="team1-name col-xs-2">
           <span></span>
         </div>
@@ -174,7 +196,7 @@
         <div class="real-score col-xs-3">
           <button class="btn btn-success">Valider</button>
         </div>
-  </div>
+  </div>-->
 
 </body>
 </html>
